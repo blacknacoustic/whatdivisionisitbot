@@ -55,8 +55,12 @@ content = f"{index}\n{items[index]}"
 content_bytes = content.encode('utf-8')
 encoded_content = base64.b64encode(content_bytes).decode('utf-8')
 
+data = {
+    'content': encoded_content
+}
+
 # Update the data with the encoded content
-data['content'] = encoded_content
+#data['content'] = encoded_content
 
 # Send a PUT request to update the file
 response = requests.put(base_url, json=data, headers=headers)
