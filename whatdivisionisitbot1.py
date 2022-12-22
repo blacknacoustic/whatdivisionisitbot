@@ -11,7 +11,7 @@ api = tweepy.API(auth)
 repo_owner = 'blacknacoustic'
 repo_name = 'whatdivisionisitbot'
 file_path = 'currentdivision.txt'
-access_token = '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'
+access_token = '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'
 
 # Set the base URL of the file you want to update
 base_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}'
