@@ -18,7 +18,7 @@ api = tweepy.API(auth)
 repo_owner = 'blacknacoustic'
 repo_name = 'whatdivisionisitbot'
 file_path = 'currentdivision.txt'
-access_token = os.environ['ACCESS_TOKEN']
+access_token = os.environ['ACCESS_TOKEN1']
 
 
 # Set the base URL of the file you want to update
