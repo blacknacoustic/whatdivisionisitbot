@@ -3,15 +3,23 @@ import time
 from datetime import datetime
 import tweepy
 import requests
+import os
 
-auth = tweepy.OAuthHandler('6KQ17czzJNfrHuMe5ozwegIyy', 'OlEhaAqfIP7XYtfqolfciiGJrBIwHXhyyDNNYrwrgFoKSMNk0P')
-auth.set_access_token('1603462800889810955-iTte5qXfBZ1ccMhyfIvyOWewQ70AWl', 'zx9lMCxcX7ytWRVWQJ2nq6Cog6063Y5BWrkZ6R0C0WDHN')
+consumer_key = os.environ['CONSUMER_KEY']
+consumer_secret = os.environ['CONSUMER_SECRET']
+access_token = os.environ['ACCESS_TOKEN']
+access_token_secret = os.environ['ACCESS_TOKEN_SECRET']
+
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 repo_owner = 'blacknacoustic'
 repo_name = 'whatdivisionisitbot'
 file_path = 'currentdivision.txt'
-access_token = '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'
+access_token = os.environ['ACCESS_TOKEN']
+
 
 # Set the base URL of the file you want to update
 base_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}'
