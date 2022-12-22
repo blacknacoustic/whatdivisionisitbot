@@ -48,7 +48,7 @@ elif response.status_code == 401:
 items = ["HW/LHW", "Feather and Lightweight", "All womens divs", "Fly and Bantam", "Middle and Welter"]
 
 # Initialize the index to 0
-index = 0
+index = 2
 
 # Encode the data as a base64 string
 content = f"{index}\n{items[index]}"
