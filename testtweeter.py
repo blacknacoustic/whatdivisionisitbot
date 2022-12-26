@@ -18,7 +18,7 @@ api = tweepy.API(auth)
 items = ["HW/LHW", "Feather and Lightweight", "All womens divs", "Fly and Bantam", "Middle and Welter"]
 
 # Initialize the index to 0
-index = 2
+index = 3
 
 try:
     tweet = api.update_status("The current division is: {}".format(items[index]))
