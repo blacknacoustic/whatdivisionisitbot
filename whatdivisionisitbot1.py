@@ -60,7 +60,7 @@ data = {
 }
 
 # Update the data with the encoded content
-#data['content'] = encoded_content
+data['content'] = encoded_content
 
 # Send a PUT request to update the file
 response = requests.put(base_url, json=data, headers=headers)
