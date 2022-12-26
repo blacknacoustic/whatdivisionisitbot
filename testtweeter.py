@@ -2,6 +2,7 @@ import base64
 import time
 from datetime import datetime
 import tweepy
+import os
 
 consumer_key = os.environ['CONSUMER_KEY']
 consumer_secret = os.environ['CONSUMER_SECRET']
