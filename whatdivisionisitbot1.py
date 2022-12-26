@@ -22,7 +22,7 @@ access_token = os.environ['ACCESS_TOKEN1']
 
 
 # Set the base URL of the file you want to update
-base_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}'
+base_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/{file_path}'
 
 # Set the headers for the request
 headers = {
