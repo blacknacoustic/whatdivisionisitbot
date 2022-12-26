@@ -22,7 +22,7 @@ access_token = os.environ['ACCESS_TOKEN1']
 
 
 # Set the base URL of the file you want to update
-base_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/{file_path}'
+base_url = f'https://github.com/blacknacoustic/whatdivisionisitbot/blob/9eb08ce08f714f0c03f881e4ec0a616399218290/currentdivision.txt'
 
 # Set the headers for the request
 headers = {
